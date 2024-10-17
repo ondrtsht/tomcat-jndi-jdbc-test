@@ -1,0 +1,21 @@
+<Context>
+    <Resource name="jdbc/TestDB"
+        auth="Container"
+        type="javax.sql.DataSource"
+        url="jdbc:oracle:thin:SYSTEM/password@localhost:1521/FREEPDB1"
+        driverClassName="oracle.jdbc.OracleDriver"
+    />
+    <Resource name="jdbc/TestDB-DBCP2"
+        auth="Container"
+        type="javax.sql.DataSource"
+        url="jdbc:oracle:thin:SYSTEM/password@localhost:1521/FREEPDB1"
+        driverClassName="oracle.jdbc.OracleDriver"
+    />
+    <Resource name="jdbc/TestDB-Tomcat"
+        auth="Container"
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+        url="jdbc:oracle:thin:SYSTEM/password@localhost:1521/FREEPDB1"
+        driverClassName="oracle.jdbc.OracleDriver"
+    />
+</Context>
